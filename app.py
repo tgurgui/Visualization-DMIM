@@ -11,7 +11,7 @@ from pymongo import MongoClient
 app = Flask(__name__) #initialize flask
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
-mongo = PyMongo(app) #initialize mongodb
+mongo = PyMongo(app, "mongodb://localhost:27017") #initialize mongodb
 client = MongoClient()
 db = client.pysaas
 
@@ -124,5 +124,3 @@ if __name__ == '__main__':
         port=int("80"),
         debug=True
     )
-
-
