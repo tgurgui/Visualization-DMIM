@@ -11,59 +11,51 @@ https://www.youtube.com/watch?v=Xz3xwpmoMHg
 This tutorial uses Conda and PIP. Please make sure to install them before you  proceed the next steps.
 
 1. Create virtual environment with the following instruction:
-
 ```
-$ conda create -n DMIM python=3.5.4
+$ conda create -f environment_mac.yml
 ```
-“DMIM” is the name of the new environment. Please make sure to install    	Python 3.5.4, and not other version.
+This will create a new environment named “DMIM”.
 
 2.  Activate the new DMIM environment by typing:
 ```
 $ conda activate DMIM
 ```
-3. Clone the repository: 
+3. Clone the repository and enter the directory:
 ```
-$ git clone https://github.com/nis1/Visualization-DMIM.git
+$ git clone https://github.com/tgurgui/Visualization-DMIM.git
+$ cd Visualization-DMIM/
 ```
-4.  Install MongoDB:
-```
-$ conda install mongodb
-```
-5. Enter the repository folder, and install the requirements:
-```
-$ pip install -r requirements.txt
-```
-6. Open new terminal window and start MongoDB:
+4. Open new terminal window, create a folder for mongo data () and start MongoDB:
 ```
 $ mongod
 ```
-7. Finally, run the website from the repository main folder:
+5. Finally, run the website from the repository main folder:
 ```
 $ FLASK_APP=app.py FLASK_DEBUG=1 python -m flask run
 ```
-8. The website should be available at http://localhost:5000/
+6. The website should be available at http://localhost:5000/
 
-A successful installation will result in the following index page: 
+A successful installation will result in the following index page:
 
-<kbd>![Home Page](https://github.com/nis1/Visualization-DMIM/blob/master/static/wiki/4.jpg)</kbd>
+<kbd>![Home Page](https://github.com/tgurgui/Visualization-DMIM/blob/master/static/wiki/4.jpg)</kbd>
 &nbsp;&nbsp;
 
 ## More images from the app
 
 #### Store and analyze various cases
-<kbd>![Store and analyze various cases](https://github.com/nis1/Visualization-DMIM/blob/master/static/wiki/5.jpg)</kbd>
+<kbd>![Store and analyze various cases](https://github.com/tgurgui/Visualization-DMIM/blob/master/static/wiki/5.jpg)</kbd>
 &nbsp;
 
 #### 3D Analysis
-<kbd>![3D Analysis](https://github.com/nis1/Visualization-DMIM/blob/master/static/wiki/8.jpg)</kbd>
+<kbd>![3D Analysis](https://github.com/tgurgui/Visualization-DMIM/blob/master/static/wiki/8.jpg)</kbd>
 &nbsp;
 
 #### Slice Analysis
-<kbd>![Slice Analysis](https://github.com/nis1/Visualization-DMIM/blob/master/static/wiki/10.jpg)</kbd>
+<kbd>![Slice Analysis](https://github.com/tgurgui/Visualization-DMIM/blob/master/static/wiki/10.jpg)</kbd>
 &nbsp;
 
 #### Draw on slices
-<kbd>![Draw on slices](https://github.com/nis1/Visualization-DMIM/blob/master/static/wiki/11.jpg)</kbd>
+<kbd>![Draw on slices](https://github.com/tgurgui/Visualization-DMIM/blob/master/static/wiki/11.jpg)</kbd>
 &nbsp;&nbsp;
 
 
@@ -72,5 +64,5 @@ A successful installation will result in the following index page:
 The X ToolKit:
 https://github.com/xtk/X
 
-AMI: 
+AMI:
 https://github.com/FNNDSC/ami
